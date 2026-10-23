@@ -8,7 +8,7 @@ echo.
 echo NOTE: Make sure backend is already running on port 8000!
 echo.
 
-cd /d "d:\FYP Riyan\frontend\frontend"
+cd /d "%~dp0"
 
 :: Check node_modules exists
 if not exist "node_modules" (

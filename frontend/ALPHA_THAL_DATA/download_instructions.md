@@ -1,6 +1,10 @@
-# Manual Download Instructions for Alpha Thalassemia Datasets
+# HemaLens — Manual Download Instructions for Alpha Thalassemia Datasets
 
-**Target Directory:** `D:\FYP Riyan\frontend\frontend\ALPHA_THAL_DATA`
+Save every file into the HemaLens project, in this folder:
+
+**Target Directory:** `frontend/ALPHA_THAL_DATA`
+
+That path is relative to the HemaLens repository root (`hemalens` on GitHub).
 
 ## Dataset 1: ThalassemiaPBS (Cell Images)
 - **Source:** Mendeley Data
