@@ -1,5 +1,5 @@
 /**
- * ThalCare Admin Users Page
+ * HemaLens Admin Users Page
  * Manage all system users
  */
 

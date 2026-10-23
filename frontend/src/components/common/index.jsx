@@ -1,5 +1,5 @@
 /**
- * ThalCare Common UI Components
+ * HemaLens Common UI Components
  */
 
 import { forwardRef } from 'react';

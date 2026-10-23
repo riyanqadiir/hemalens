@@ -1,5 +1,5 @@
 /**
- * ThalCare Lab Technician Tests Page
+ * HemaLens Lab Technician Tests Page
  * List and manage all test entries
  */
 

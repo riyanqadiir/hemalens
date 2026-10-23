@@ -130,7 +130,7 @@ def get_audit_logs(
     return [
         {
             "id": i,
-            "user": "admin@thalcare.com",
+            "user": "admin@hemalens.com",
             "action": ["LOGIN", "CREATE_USER", "DELETE_PATIENT", "UPDATE_CONFIG", "EXPORT_REPORT"][i % 5],
             "details": f"Attempted to perform action {i}",
             "ip_address": "192.168.1.1",
@@ -144,14 +144,14 @@ def get_system_config(
 ):
     # Mock system configuration
     return {
-        "site_name": "ThalCare",
+        "site_name": "HemaLens",
         "maintenance_mode": False,
         "allow_registrations": True,
         "prediction_model_version": "2.1",
         "smtp_settings": {
             "server": "smtp.gmail.com",
             "port": 587,
-            "user": "noreply@thalcare.com"
+            "user": "noreply@hemalens.com"
         }
     }
 

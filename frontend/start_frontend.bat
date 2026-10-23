@@ -1,14 +1,14 @@
 @echo off
-title ThalCare Frontend Server
+title HemaLens Frontend Server
 echo ==========================================
-echo   ThalCare Frontend - Phase 7
+echo   HemaLens Frontend - Phase 7
 echo   Starting on http://localhost:5173
 echo ==========================================
 echo.
 echo NOTE: Make sure backend is already running on port 8000!
 echo.
 
-cd /d "d:\FYP MOHID\frontend\frontend"
+cd /d "d:\FYP Riyan\frontend\frontend"
 
 :: Check node_modules exists
 if not exist "node_modules" (

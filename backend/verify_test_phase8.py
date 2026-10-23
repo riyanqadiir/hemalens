@@ -4,22 +4,22 @@ import json
 # Login as lab technician
 print("Attempting login as lab technician...")
 r = requests.post("http://localhost:8000/api/v1/auth/login",
-    json={"email": "lab@thalcare.com", "password": "admin123"})
+    json={"email": "lab@hemalens.com", "password": "admin123"})
 
 # Try admin password if lab fails
 if r.status_code != 200:
     r = requests.post("http://localhost:8000/api/v1/auth/login",
-        json={"email": "lab@thalcare.com", "password": "password123"})
+        json={"email": "lab@hemalens.com", "password": "password123"})
         
 if r.status_code != 200:
     # Try Admin user instead if lab user is missing completely
     r = requests.post("http://localhost:8000/api/v1/auth/login",
-        json={"email": "admin@thalcare.com", "password": "admin123"})
+        json={"email": "admin@hemalens.com", "password": "admin123"})
         
 if r.status_code != 200:
     # Try Admin user with alternate password
     r = requests.post("http://localhost:8000/api/v1/auth/login",
-        json={"email": "admin@thalcare.com", "password": "password123"})
+        json={"email": "admin@hemalens.com", "password": "password123"})
 
 if r.status_code != 200:
     print("Login failed:", r.text)

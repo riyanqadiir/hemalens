@@ -1,5 +1,5 @@
 /**
- * ThalCare API Wrapper
+ * HemaLens API Wrapper
  * Handles all HTTP requests with authentication, token refresh, and error handling
  */
 
@@ -8,8 +8,8 @@ import axios from 'axios';
 // Environment configuration
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api/v1';
 const API_TIMEOUT = parseInt(import.meta.env.VITE_API_TIMEOUT) || 30000;
-const JWT_STORAGE_KEY = import.meta.env.VITE_JWT_STORAGE_KEY || 'thalcare_token';
-const REFRESH_TOKEN_KEY = import.meta.env.VITE_REFRESH_TOKEN_KEY || 'thalcare_refresh_token';
+const JWT_STORAGE_KEY = import.meta.env.VITE_JWT_STORAGE_KEY || 'hemalens_token';
+const REFRESH_TOKEN_KEY = import.meta.env.VITE_REFRESH_TOKEN_KEY || 'hemalens_refresh_token';
 
 // Create axios instance with default config
 const api = axios.create({
@@ -36,7 +36,7 @@ export const TokenService = {
   clearTokens: () => {
     localStorage.removeItem(JWT_STORAGE_KEY);
     localStorage.removeItem(REFRESH_TOKEN_KEY);
-    localStorage.removeItem(import.meta.env.VITE_USER_STORAGE_KEY || 'thalcare_user');
+    localStorage.removeItem(import.meta.env.VITE_USER_STORAGE_KEY || 'hemalens_user');
   },
 
   isTokenExpired: (token) => {

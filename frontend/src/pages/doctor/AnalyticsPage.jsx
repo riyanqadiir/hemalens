@@ -1,5 +1,5 @@
 /**
- * ThalCare Doctor Analytics Page
+ * HemaLens Doctor Analytics Page
  * Comprehensive analytics and insights
  */
 

@@ -3,11 +3,11 @@ import requests, json
 # Login as doctor
 print("Logging in as doctor...")
 r = requests.post("http://localhost:8000/api/v1/auth/login",
-    json={"email": "doctor@thalcare.com", "password": "password123"})
+    json={"email": "doctor@hemalens.com", "password": "password123"})
 
 if r.status_code != 200:
     r = requests.post("http://localhost:8000/api/v1/auth/login",
-        json={"email": "admin@thalcare.com", "password": "password123"})
+        json={"email": "admin@hemalens.com", "password": "password123"})
 
 if r.status_code != 200:
     print("Login failed:", r.text)

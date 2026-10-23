@@ -1,6 +1,6 @@
 """
-ThalCare Phase 7 - Database Migration Script
-Run this ONCE to add new columns to the existing thalcare.db.
+HemaLens Phase 7 - Database Migration Script
+Run this ONCE to add new columns to the existing hemalens.db.
 
 Usage:
     cd backend
@@ -10,7 +10,7 @@ Usage:
 import sqlite3
 import os
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "thalcare.db")
+DB_PATH = os.path.join(os.path.dirname(__file__), "hemalens.db")
 
 def migrate():
     conn = sqlite3.connect(DB_PATH)
@@ -35,7 +35,7 @@ def migrate():
         ("hba",   "REAL"),
     ]
 
-    print("=== ThalCare Phase 7 Database Migration ===\n")
+    print("=== HemaLens Phase 7 Database Migration ===\n")
 
     # Migrate predictions
     cur.execute("PRAGMA table_info(predictions)")

@@ -1,5 +1,5 @@
 /**
- * ThalCare - User Profile Page
+ * HemaLens - User Profile Page
  */
 
 import { useState } from 'react';

@@ -1,5 +1,5 @@
 /**
- * ThalCare Lab Technician Upload Page
+ * HemaLens Lab Technician Upload Page
  * Upload CBC/HPLC report files
  */
 

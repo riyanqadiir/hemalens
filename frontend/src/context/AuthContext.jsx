@@ -1,5 +1,5 @@
 /**
- * ThalCare Authentication Context
+ * HemaLens Authentication Context
  * Manages user authentication state across the application
  */
 
@@ -18,9 +18,9 @@ export const UserRoles = {
 
 // Mock users for development
 const MOCK_USERS = {
-  'doctor@thalcare.com': {
+  'doctor@hemalens.com': {
     id: 1,
-    email: 'doctor@thalcare.com',
+    email: 'doctor@hemalens.com',
     name: 'Dr. Ahmed Khan',
     role: 'doctor',
     avatar: null,
@@ -29,9 +29,9 @@ const MOCK_USERS = {
     permissions: ['view_patients', 'add_patients', 'view_predictions', 'run_predictions', 'view_analytics'],
     created_at: '2024-01-15T10:00:00Z',
   },
-  'lab@thalcare.com': {
+  'lab@hemalens.com': {
     id: 2,
-    email: 'lab@thalcare.com',
+    email: 'lab@hemalens.com',
     name: 'Ali Hassan',
     role: 'lab_technician',
     avatar: null,
@@ -40,9 +40,9 @@ const MOCK_USERS = {
     permissions: ['view_patients', 'add_patients', 'enter_tests', 'upload_reports'],
     created_at: '2024-02-01T10:00:00Z',
   },
-  'admin@thalcare.com': {
+  'admin@hemalens.com': {
     id: 3,
-    email: 'admin@thalcare.com',
+    email: 'admin@hemalens.com',
     name: 'Sara Malik',
     role: 'admin',
     avatar: null,
@@ -71,7 +71,7 @@ export function AuthProvider({ children }) {
       if (IS_MOCK_MODE) {
         // In mock mode, just check localStorage for user
         const storedUser = localStorage.getItem(
-          import.meta.env.VITE_USER_STORAGE_KEY || 'thalcare_user'
+          import.meta.env.VITE_USER_STORAGE_KEY || 'hemalens_user'
         );
         if (storedUser) {
           try {
@@ -79,7 +79,7 @@ export function AuthProvider({ children }) {
             setUser(userData);
             setIsAuthenticated(true);
           } catch {
-            localStorage.removeItem(import.meta.env.VITE_USER_STORAGE_KEY || 'thalcare_user');
+            localStorage.removeItem(import.meta.env.VITE_USER_STORAGE_KEY || 'hemalens_user');
           }
         }
         setIsLoading(false);
@@ -157,7 +157,7 @@ export function AuthProvider({ children }) {
 
         // Store mock user
         localStorage.setItem(
-          import.meta.env.VITE_USER_STORAGE_KEY || 'thalcare_user',
+          import.meta.env.VITE_USER_STORAGE_KEY || 'hemalens_user',
           JSON.stringify(mockUser)
         );
 
@@ -190,7 +190,7 @@ export function AuthProvider({ children }) {
 
       // Store user data
       localStorage.setItem(
-        import.meta.env.VITE_USER_STORAGE_KEY || 'thalcare_user',
+        import.meta.env.VITE_USER_STORAGE_KEY || 'hemalens_user',
         JSON.stringify(fullUser)
       );
 
@@ -220,7 +220,7 @@ export function AuthProvider({ children }) {
       console.error('Logout API error:', err);
     } finally {
       TokenService.clearTokens();
-      localStorage.removeItem(import.meta.env.VITE_USER_STORAGE_KEY || 'thalcare_user');
+      localStorage.removeItem(import.meta.env.VITE_USER_STORAGE_KEY || 'hemalens_user');
       setUser(null);
       setIsAuthenticated(false);
     }
@@ -236,7 +236,7 @@ export function AuthProvider({ children }) {
         const updatedUser = { ...user, ...data };
         setUser(updatedUser);
         localStorage.setItem(
-          import.meta.env.VITE_USER_STORAGE_KEY || 'thalcare_user',
+          import.meta.env.VITE_USER_STORAGE_KEY || 'hemalens_user',
           JSON.stringify(updatedUser)
         );
         return { success: true, user: updatedUser };
@@ -263,7 +263,7 @@ export function AuthProvider({ children }) {
 
       setUser(updatedUser);
       localStorage.setItem(
-        import.meta.env.VITE_USER_STORAGE_KEY || 'thalcare_user',
+        import.meta.env.VITE_USER_STORAGE_KEY || 'hemalens_user',
         JSON.stringify(updatedUser)
       );
       return { success: true, user: updatedUser };

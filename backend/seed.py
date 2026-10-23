@@ -7,21 +7,21 @@ def seed_db():
     db = SessionLocal()
     users = [
         {
-            "email": "admin@thalcare.com",
+            "email": "admin@hemalens.com",
             "password": "password123",
             "first_name": "System",
             "last_name": "Admin",
             "role": UserRole.ADMIN
         },
         {
-            "email": "doctor@thalcare.com",
+            "email": "doctor@hemalens.com",
             "password": "password123",
             "first_name": "Jane",
             "last_name": "Doe",
             "role": UserRole.DOCTOR
         },
         {
-            "email": "lab@thalcare.com",
+            "email": "lab@hemalens.com",
             "password": "password123",
             "first_name": "John",
             "last_name": "Smith",

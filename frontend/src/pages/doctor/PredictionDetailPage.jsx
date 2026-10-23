@@ -1,5 +1,5 @@
 /**
- * ThalCare Doctor Prediction Detail Page
+ * HemaLens Doctor Prediction Detail Page
  * Detailed view of a single prediction with all analysis
  */
 

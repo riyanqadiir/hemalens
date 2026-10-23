@@ -1,5 +1,5 @@
 /**
- * ThalCare Doctor Predictions Page
+ * HemaLens Doctor Predictions Page
  * List and manage all predictions
  */
 

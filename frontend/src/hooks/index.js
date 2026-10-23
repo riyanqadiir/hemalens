@@ -1,5 +1,5 @@
 /**
- * ThalCare Custom Hooks
+ * HemaLens Custom Hooks
  */
 
 import { useState, useEffect, useCallback, useRef } from 'react';

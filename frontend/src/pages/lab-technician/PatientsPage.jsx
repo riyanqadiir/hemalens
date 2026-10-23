@@ -1,5 +1,5 @@
 /**
- * ThalCare Lab Technician Patients Page
+ * HemaLens Lab Technician Patients Page
  * Register and manage patients - fetches from real backend API
  */
 

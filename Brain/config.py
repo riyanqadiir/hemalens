@@ -6,7 +6,7 @@
 import os
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
-BASE_DIR   = r"E:\FYP MOHID\Model-2"
+BASE_DIR   = r"E:\personal project\Model-2"
 BRAIN_DIR  = os.path.join(BASE_DIR, "Brain")
 MODEL_DIR  = os.path.join(BRAIN_DIR, "models")
 PARAM_DIR  = os.path.join(BRAIN_DIR, "parameters")

@@ -1,5 +1,5 @@
 /**
- * ThalCare Dashboard Layout
+ * HemaLens Dashboard Layout
  */
 
 import { useState } from 'react';
@@ -49,7 +49,7 @@ export default function DashboardLayout() {
   const [notifications, setNotifications] = useState([
     { id: 1, title: 'New Patient Registered', message: 'Malaika Khan has been registered.', time: '5m ago', type: 'info', read: false },
     { id: 2, title: 'Test Result Ready', message: 'CBC result for Zehaha Ali is ready for review.', time: '20m ago', type: 'success', read: false },
-    { id: 3, title: 'System Update', message: 'ThalCare v1.2 has been deployed successfully.', time: '1h ago', type: 'system', read: true },
+    { id: 3, title: 'System Update', message: 'HemaLens v1.2 has been deployed successfully.', time: '1h ago', type: 'system', read: true },
   ]);
 
   const navItems = NAVIGATION_ITEMS[user?.role] || [];
@@ -100,7 +100,7 @@ export default function DashboardLayout() {
             <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
               <Activity className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-gray-900">ThalCare</span>
+            <span className="text-xl font-bold text-gray-900">HemaLens</span>
           </NavLink>
           <button
             onClick={() => setSidebarOpen(false)}

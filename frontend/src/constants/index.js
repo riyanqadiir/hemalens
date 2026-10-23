@@ -1,5 +1,5 @@
 /**
- * ThalCare Constants and Configuration
+ * HemaLens Constants and Configuration
  */
 
 // ============================================

@@ -1,6 +1,6 @@
 # Manual Download Instructions for Alpha Thalassemia Datasets
 
-**Target Directory:** `D:\FYP MOHID\frontend\frontend\ALPHA_THAL_DATA`
+**Target Directory:** `D:\FYP Riyan\frontend\frontend\ALPHA_THAL_DATA`
 
 ## Dataset 1: ThalassemiaPBS (Cell Images)
 - **Source:** Mendeley Data

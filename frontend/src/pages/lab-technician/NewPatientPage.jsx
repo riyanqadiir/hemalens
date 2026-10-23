@@ -1,5 +1,5 @@
 /**
- * ThalCare Lab Technician New Patient Page
+ * HemaLens Lab Technician New Patient Page
  * Simplified patient registration form
  */
 

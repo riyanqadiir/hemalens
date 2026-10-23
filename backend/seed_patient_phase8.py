@@ -3,12 +3,12 @@ import requests
 # Login as admin
 print("Attempting login as admin...")
 r = requests.post("http://localhost:8000/api/v1/auth/login",
-    json={"email": "admin@thalcare.com", "password": "admin123"})
+    json={"email": "admin@hemalens.com", "password": "admin123"})
 
 if r.status_code != 200:
     # Try alternate password
     r = requests.post("http://localhost:8000/api/v1/auth/login",
-        json={"email": "admin@thalcare.com", "password": "password123"})
+        json={"email": "admin@hemalens.com", "password": "password123"})
 
 if r.status_code != 200:
     print("Login failed:", r.text)

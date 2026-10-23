@@ -13,7 +13,7 @@ columns_to_add = [
 ]
 
 try:
-    conn = sqlite3.connect('thalcare.db', timeout=10)
+    conn = sqlite3.connect('hemalens.db', timeout=10)
     c = conn.cursor()
     
     for col_name, col_type in columns_to_add:

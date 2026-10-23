@@ -1,5 +1,5 @@
 /**
- * ThalCare Admin Dashboard
+ * HemaLens Admin Dashboard
  */
 
 import { useState, useEffect } from 'react';

@@ -2,7 +2,7 @@ import requests, json, sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 BASE = "http://localhost:8000/api/v1"
-r = requests.post(f"{BASE}/auth/login", json={"email": "admin@thalcare.com", "password": "password123"})
+r = requests.post(f"{BASE}/auth/login", json={"email": "admin@hemalens.com", "password": "password123"})
 token = r.json()["access_token"]
 H = {"Authorization": f"Bearer {token}"}
 

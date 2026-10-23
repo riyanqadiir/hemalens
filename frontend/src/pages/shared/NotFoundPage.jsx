@@ -1,5 +1,5 @@
 /**
- * ThalCare - 404 Not Found Page
+ * HemaLens - 404 Not Found Page
  */
 
 import { Link } from 'react-router-dom';
@@ -41,7 +41,7 @@ export default function NotFoundPage() {
 
       {/* Footer */}
       <p className="mt-16 text-sm text-gray-400">
-        ThalCare - Alpha Thalassemia Detection System
+        HemaLens - Alpha Thalassemia Detection System
       </p>
     </div>
   );

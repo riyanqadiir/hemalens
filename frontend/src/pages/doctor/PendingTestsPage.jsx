@@ -1,5 +1,5 @@
 /**
- * ThalCare Doctor Pending Tests Page
+ * HemaLens Doctor Pending Tests Page
  * Shows only patients who haven't had a completed test yet
  */
 

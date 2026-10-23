@@ -1,5 +1,5 @@
 /**
- * ThalCare Lab Technician Dashboard
+ * HemaLens Lab Technician Dashboard
  */
 
 import { useState, useEffect } from 'react';

@@ -1,5 +1,5 @@
 /**
- * ThalCare Admin Audit Logs Page
+ * HemaLens Admin Audit Logs Page
  */
 
 import { useState, useEffect } from 'react';

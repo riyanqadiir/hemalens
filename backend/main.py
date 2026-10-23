@@ -1,5 +1,5 @@
 """
-ThalCare FastAPI Backend - Phase 7
+HemaLens FastAPI Backend - Phase 7
 """
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -13,7 +13,7 @@ if not os.environ.get("MODEL2_DIR"):
     if os.path.isdir(candidate):
         os.environ["MODEL2_DIR"] = os.path.abspath(candidate)
     else:
-        os.environ["MODEL2_DIR"] = r"E:\FYP MOHID\Model-2"
+        os.environ["MODEL2_DIR"] = r"E:\personal project\Model-2"
 
 from routers import auth, patients, tests, predictions, admin, analytics
 
@@ -21,8 +21,8 @@ from routers import auth, patients, tests, predictions, admin, analytics
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
-    title="ThalCare API",
-    description="Backend API for ThalCare Alpha Thalassemia Detection System — Phase 7",
+    title="HemaLens API",
+    description="Backend API for HemaLens Alpha Thalassemia Detection System — Phase 7",
     version="2.0.0"
 )
 
@@ -45,7 +45,7 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return {"message": "ThalCare API v2.0 — Phase 7 Active", "ml_engine": "5-Model Ensemble"}
+    return {"message": "HemaLens API v2.0 — Phase 7 Active", "ml_engine": "5-Model Ensemble"}
 
 @app.get("/api/v1/health")
 def health_check():

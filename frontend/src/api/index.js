@@ -1,5 +1,5 @@
 /**
- * ThalCare API Module
+ * HemaLens API Module
  * Central export for all API functionality
  */
 

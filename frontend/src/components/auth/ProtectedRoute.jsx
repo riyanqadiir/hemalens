@@ -1,5 +1,5 @@
 /**
- * ThalCare Protected Route Component
+ * HemaLens Protected Route Component
  * Handles authentication and role-based access control
  */
 

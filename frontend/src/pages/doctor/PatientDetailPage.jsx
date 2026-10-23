@@ -1,5 +1,5 @@
 /**
- * ThalCare Doctor Patient Detail Page
+ * HemaLens Doctor Patient Detail Page
  * Shows patient information, test history, and predictions
  */
 

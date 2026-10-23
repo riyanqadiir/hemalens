@@ -1,13 +1,13 @@
 @echo off
-title ThalCare Backend Server
+title HemaLens Backend Server
 echo ==========================================
-echo   ThalCare Backend - Phase 7
+echo   HemaLens Backend - Phase 7
 echo   Starting on http://localhost:8000
 echo ==========================================
 echo.
 
 :: Change to backend directory (works from anywhere)
-cd /d "E:\FYP MOHID\backend"
+cd /d "E:\FYP Riyan\backend"
 
 :: Check if venv exists
 if not exist "venv\Scripts\python.exe" (
@@ -27,6 +27,6 @@ echo API Docs available at: http://localhost:8000/docs
 echo Health check at:       http://localhost:8000/api/v1/health
 echo.
 
-"E:\FYP MOHID\backend\venv\Scripts\python.exe" -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
+"E:\FYP Riyan\backend\venv\Scripts\python.exe" -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 pause

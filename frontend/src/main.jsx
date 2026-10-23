@@ -1,5 +1,5 @@
 /**
- * ThalCare - Alpha Thalassemia Detection System
+ * HemaLens - Alpha Thalassemia Detection System
  * Application Entry Point
  */
 

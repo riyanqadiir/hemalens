@@ -1,5 +1,5 @@
 /**
- * ThalCare Modal Component
+ * HemaLens Modal Component
  */
 
 import { useEffect, useRef } from 'react';

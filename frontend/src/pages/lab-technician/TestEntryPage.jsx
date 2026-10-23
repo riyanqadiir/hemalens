@@ -1,5 +1,5 @@
 /**
- * ThalCare Lab Technician Test Entry Page
+ * HemaLens Lab Technician Test Entry Page
  * Fully wired to real backend API.
  * Collects all 15 lab features required by the ML Brain.
  * Biological limits enforced on all CBC + HPLC parameters.

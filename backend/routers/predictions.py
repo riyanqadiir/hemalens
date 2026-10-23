@@ -1,5 +1,5 @@
 """
-ThalCare Predictions Router - Phase 7 Integration
+HemaLens Predictions Router - Phase 7 Integration
 Connects FastAPI backend with Model-2 Brain inference engine.
 Real 5-model ensemble with confidence & probability extraction.
 """
@@ -36,9 +36,9 @@ def _get_ml_engine():
         try:
             from Brain.inference import DiagnosticEngine
             _ml_engine = DiagnosticEngine()
-            print("[ThalCare] ML Engine loaded successfully [OK]")
+            print("[HemaLens] ML Engine loaded successfully [OK]")
         except Exception as e:
-            print(f"[ThalCare] WARNING: ML Engine failed to load: {e}")
+            print(f"[HemaLens] WARNING: ML Engine failed to load: {e}")
             _ml_engine = None
     return _ml_engine
 
@@ -420,12 +420,12 @@ def download_report(
         conf_label = "LOW - Request clinical review, do NOT use for diagnosis"
 
     report_content = f"""
-THALCARE - ALPHA THALASSEMIA PREDICTION REPORT (v2.0+Confidence)
+HEMALENS - ALPHA THALASSEMIA PREDICTION REPORT (v2.0+Confidence)
 ================================================================
 Report ID    : {prediction.id}
 Date         : {prediction.created_at.strftime('%Y-%m-%d %H:%M:%S')}
 Model Version: {prediction.model_version or '2.0+Confidence'}
-Clinical Ref : ThalCare-{prediction.id:05d}
+Clinical Ref : HemaLens-{prediction.id:05d}
 
 PATIENT INFORMATION
 -------------------
@@ -481,12 +481,12 @@ CLINICAL INTERPRETATION GUIDE
 60-70%   : CONDITIONAL - Verify with additional tests
 < 60%    : LOW - Request clinical review, DO NOT use for diagnosis
 ================================================================
-© 2026 ThalCare - Lahore Garrison University
+© 2026 HemaLens. Owner: Riyan
 AI-Assisted Diagnosis. For clinical use only by qualified personnel.
 """
 
     return Response(
         content=report_content,
         media_type="text/plain",
-        headers={"Content-Disposition": f"attachment; filename=ThalCare_Report_{prediction_id}.txt"}
+        headers={"Content-Disposition": f"attachment; filename=HemaLens_Report_{prediction_id}.txt"}
     )

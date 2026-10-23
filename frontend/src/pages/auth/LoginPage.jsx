@@ -1,5 +1,5 @@
 /**
- * ThalCare Login Page
+ * HemaLens Login Page
  */
 
 import { useState } from 'react';
@@ -70,7 +70,7 @@ export default function LoginPage() {
             <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
               <Activity className="w-7 h-7 text-white" />
             </div>
-            <span className="text-2xl font-bold text-white">ThalCare</span>
+            <span className="text-2xl font-bold text-white">HemaLens</span>
           </div>
         </div>
 
@@ -115,7 +115,7 @@ export default function LoginPage() {
         </div>
 
         <p className="text-primary-200 text-sm">
-          © 2024 ThalCare. Lahore Garrison University.
+          © 2026 HemaLens. Owner: Riyan
         </p>
       </div>
 
@@ -127,7 +127,7 @@ export default function LoginPage() {
             <div className="w-10 h-10 bg-primary-600 rounded-xl flex items-center justify-center">
               <Activity className="w-6 h-6 text-white" />
             </div>
-            <span className="text-2xl font-bold text-gray-900">ThalCare</span>
+            <span className="text-2xl font-bold text-gray-900">HemaLens</span>
           </div>
 
           <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
@@ -198,9 +198,9 @@ export default function LoginPage() {
             <div className="mt-6 p-4 bg-gray-50 rounded-lg">
               <p className="text-xs text-gray-500 font-medium mb-2">Demo Credentials:</p>
               <div className="space-y-1 text-xs text-gray-600">
-                <p><strong>Doctor:</strong> doctor@thalcare.com / password123</p>
-                <p><strong>Lab Tech:</strong> lab@thalcare.com / password123</p>
-                <p><strong>Admin:</strong> admin@thalcare.com / password123</p>
+                <p><strong>Doctor:</strong> doctor@hemalens.com / password123</p>
+                <p><strong>Lab Tech:</strong> lab@hemalens.com / password123</p>
+                <p><strong>Admin:</strong> admin@hemalens.com / password123</p>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 /**
- * ThalCare Doctor Patients List Page
+ * HemaLens Doctor Patients List Page
  * Shows all patients with View, Add Patient, and filter functionality
  */
 

@@ -1,5 +1,5 @@
 /**
- * ThalCare Doctor Dashboard
+ * HemaLens Doctor Dashboard
  */
 
 import { useState, useEffect } from 'react';

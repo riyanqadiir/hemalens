@@ -1,5 +1,5 @@
 /**
- * ThalCare Doctor New Patient Page
+ * HemaLens Doctor New Patient Page
  * Form for adding new patients
  */
 

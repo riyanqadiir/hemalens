@@ -1,5 +1,5 @@
 /**
- * ThalCare Admin Configuration Page
+ * HemaLens Admin Configuration Page
  */
 
 import { useState, useEffect } from 'react';

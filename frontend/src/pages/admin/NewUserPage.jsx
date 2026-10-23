@@ -1,5 +1,5 @@
 /**
- * ThalCare Admin New User Page
+ * HemaLens Admin New User Page
  * Create or edit a user
  */
 

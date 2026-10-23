@@ -5,11 +5,7 @@
 	logallrefupdates = true
 	symlinks = false
 	ignorecase = true
-[remote "origin"]
-	url = https://github.com/Ronin1243/frontend.git
-	fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "main"]
 	gk-last-accessed = 2026-02-16T10:15:16.312Z
 	gk-last-modified = 2026-01-03T18:55:42.067Z
-	remote = origin
 	merge = refs/heads/main

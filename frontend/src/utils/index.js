@@ -1,5 +1,5 @@
 /**
- * ThalCare Utility Functions
+ * HemaLens Utility Functions
  */
 
 import { format, formatDistanceToNow, parseISO, isValid } from 'date-fns';

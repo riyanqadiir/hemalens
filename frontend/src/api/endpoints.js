@@ -1,5 +1,5 @@
 /**
- * ThalCare API Endpoints
+ * HemaLens API Endpoints
  * All API endpoints organized by feature/module
  */
 
